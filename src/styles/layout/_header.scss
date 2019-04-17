@@ -1,0 +1,31 @@
+.b-dashboard-header {
+    position: relative;
+    background: #414755;
+    top: 0;
+    left: 0;
+    .b-logo{
+        .link-logo{
+            width: 80%;
+            padding: 10px 10px;
+        }
+    }
+    .b-menu{
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items(center);
+        width: 80%;
+        .b-search{  
+            padding: 0 20px;
+            color: white;
+            @include rem("font-size",20);
+        }
+        .b-user{
+            padding: 0 20px;
+            .img-user{
+                border-radius: 31px;    
+                width: 31px;
+                height: 31px;
+            }
+        }
+    }
+}
