@@ -1,31 +1,84 @@
 .b-dashboard-header {
-    position: relative;
-    background: #414755;
-    top: 0;
-    left: 0;
-    .b-logo{
-        .link-logo{
-            width: 80%;
-            padding: 10px 10px;
-        }
+  position: relative;
+  background: #414755;
+  top: 0;
+  left: 0;
+  .b-logo {
+    .link-logo {
+      width: 80%;
+      padding: 10px 10px;
     }
-    .b-menu{
-        @include flexbox();
-        @include justify-content(space-between);
-        @include align-items(center);
-        width: 80%;
-        .b-search{  
-            padding: 0 20px;
-            color: white;
-            @include rem("font-size",20);
+  }
+  .b-menu {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+    width: 80%;
+    .b-search {
+      padding: 0 20px;
+      color: white;
+      @include rem("font-size", 20);
+    }
+    .b-user {
+      padding: 0 20px;
+      .img-user {
+        border-radius: 31px;
+        width: 31px;
+        height: 31px;
+      }
+    }
+  }
+}
+.b-page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #818181;
+  .b-block {
+    @include flexbox();
+    @include justify-content(space-between);
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    .b-block-left {
+      img {
+        width: 200px;
+      }
+    }
+    .b-block-right {
+      .b-item {
+        display: inline-block;
+
+        &.b-dropdown {
+          &::after {
+            font-family: "Font Awesome 5 Free";
+            content: "\f078";
+            font-weight: 900;
+            color: #fff;
+          }
         }
-        .b-user{
-            padding: 0 20px;
-            .img-user{
-                border-radius: 31px;    
-                width: 31px;
-                height: 31px;
+        .b-btn {
+          display: inline-block;
+          height: 70px;
+          min-width: 50px;
+          background-color: transparent;
+          border: none;
+          color: #fff;
+
+          &:hover {
+            background-color: #fff;
+            color: #414755;
+            i {
+              color: #414755;
             }
+          }
+          i {
+            color: #fff;
+            @include rem(font-size, 20);
+          }
         }
+      }
     }
+  }
 }
