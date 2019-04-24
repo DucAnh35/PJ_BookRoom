@@ -1,0 +1,57 @@
+.b-page-main {
+  .b-block {
+    @include flexbox();
+    background-color: #e2e2e2;
+
+    .b-block-left {
+      min-height: 100vh;
+      padding: 100px 10px;
+      width: 20%;
+      background-color: #d8d8d8;
+      .b-group-btn {
+        margin-bottom: 10px;
+        .b-btn {
+          display: block;
+          width: 180px;
+          padding: 8px 10px;
+          border: none;
+          box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.25);
+          background-color: #818181;
+          color: #fff;
+        }
+      }
+      .b-calender {
+        margin-top: 10px;
+        img {
+          width: 100%;
+        }
+      }
+      .b-rooms {
+        margin-top: 30px;
+        .b-heading {
+          .b-text-title {
+            @include rem(font-size, 18);
+            font-weight: 700;
+          }
+        }
+        .b-form {
+          margin-top: 10px;
+          padding: 10px;
+          input[type="checkbox"] {
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+    .b-block-right {
+      width: 80%;
+      padding: 90px 20px;
+      .b-fullcalender {
+        min-height: 100vh;
+        background-color: #d8d8d8;
+        box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.45);
+        border-radius: 0px;
+      }
+    }
+  }
+}

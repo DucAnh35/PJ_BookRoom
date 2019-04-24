@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "HTML Boilerplate"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- include header.html -->
+        @@include('../layouts/home/header.html')
+
+
+        <main class="b-page-main">
+            <div class="b-block">
+                <!-- <div class="b-modal">
+                    <form action="" class="b-form">
+                        <div class="b-form-group">
+                            <input type="text" placeholder="Thêm Tiêu Đề" />
+                        </div>
+                        <div class="b-form-group b-date">
+                            <input type="datetime-local" />
+                            <input type="datetime-local" />
+                        </div>
+                        <div class="b-form-group b-form-room">
+                            <lable class="b-lable">Chọn Phòng</lable>
+                            <select>
+                                <option value="default">Chọn Phòng</option>
+                                <option> Phòng 1</option>
+                                <option> Phòng2</option>
+                            </select>
+                        </div>
+                        <div class="b-form-group">
+                            <input type="checkbox"> Lặp Lại
+                        </div>
+                        <div class="b-form-input">
+                            <button type="submit">LƯU</button>
+                            <button type="cancel">HỦY</button>
+                        </div>
+                    </form>
+                </div> -->
+                <div class="b-block-left">
+                    <div class="b-group-btn">
+                        <button class="b-btn waves-effect waves-light">
+                            TẠO
+                        </button>
+                    </div>
+                    <div class="b-calender">
+                        <img src="https://i.stack.imgur.com/2RXcN.gif" alt="Calneder" />
+                    </div>
+                    <div class="b-rooms">
+                        <div class="b-heading text-center">
+                            <h2 class="b-text-title">
+                                PHÒNG
+                            </h2>
+                        </div>
+                        <div class="b-form">
+                            <form>
+                                <div class="b-form-group">
+                                    <input type="checkbox" name="a" id="a"> <label for="a"> Phòng họp nhỏ 1
+                                    </label>
+                                </div>
+                                <div class="b-form-group">
+                                    <input type="checkbox" name="a" id="a"> <label for="a"> Phòng họp nhỏ 1
+                                    </label>
+                                </div>
+                                <div class="b-form-group">
+                                    <input type="checkbox" name="a" id="a"> <label for="a"> Phòng họp nhỏ 1
+                                    </label>
+                                </div>
+                                <div class="b-form-group">
+                                    <input type="checkbox" name="a" id="a"> <label for="a"> Phòng họp nhỏ 1
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-block-right">
+                    <div class="b-fullcalender">
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <!-- include footer.html -->
+        @@include('../layouts/home/footer.html')
+    </div>
+
+    <!-- include scripts.html -->
+    @@include('../layouts/scripts.html')
+</body>
+
+</html>
