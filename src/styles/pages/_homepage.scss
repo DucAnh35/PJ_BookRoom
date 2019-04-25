@@ -2,22 +2,23 @@
   .b-block {
     @include flexbox();
     background-color: #e2e2e2;
-
     .b-block-left {
       min-height: 100vh;
-      padding: 100px 10px;
+      padding: 100px 20px;
       width: 20%;
-      background-color: #d8d8d8;
+      background-color: $color_header;
+      box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.25);
       .b-group-btn {
         margin-bottom: 10px;
         .b-btn {
           display: block;
-          width: 180px;
+          width: 100%;
           padding: 8px 10px;
           border: none;
           box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.25);
-          background-color: #818181;
+          background-color: $color_green;
           color: #fff;
+          border-radius: 2px;
         }
       }
       .b-calender {
@@ -28,17 +29,51 @@
       }
       .b-rooms {
         margin-top: 30px;
+        text-align: center;
         .b-heading {
           .b-text-title {
-            @include rem(font-size, 18);
-            font-weight: 700;
+            @include rem(font-size, 20);
+            color: #4c4c4c;
+            font-family: "Roboto Medium";
           }
         }
         .b-form {
           margin-top: 10px;
-          padding: 10px;
-          input[type="checkbox"] {
-            border-radius: 100%;
+          padding: 10px 0;
+          .b-form-group {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            .b-lable-checkbox {
+              color: #4c4c4c;
+              cursor: pointer;
+              &::selection {
+                background-color: transparent;
+              }
+              &::before {
+                font-family: "Font Awesome 5 Free";
+                content: "\f111";
+                display: inline-block;
+                padding-right: 3px;
+                vertical-align: middle;
+                font-weight: 900;
+                color: #e2f2eb;
+              }
+            }
+            input[type="checkbox"] {
+              border-radius: 100%;
+              color: #4c4c4c;
+              @include rem(line-height, 24);
+              border-radius: 100%;
+              visibility: hidden;
+            }
+            input[type="checkbox"]:checked {
+              + .b-lable-checkbox {
+                &::before {
+                  content: "\f058";
+                  color: $color_green;
+                }
+              }
+            }
           }
         }
       }
@@ -47,10 +82,119 @@
       width: 80%;
       padding: 90px 20px;
       .b-fullcalender {
-        min-height: 100vh;
+       
         background-color: #d8d8d8;
         box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.45);
         border-radius: 0px;
+      }
+    }
+  }
+}
+.b-page-login {
+  position: fixed;
+  width: 400px;
+  left: 50%;
+  top: 50%;
+  @include transform(translate(-50%, -50%));
+}
+.b-login {
+  background-color: #fff;
+  padding: 20px 20px 5px 20px;
+  border-radius: 4px;
+  .b-heading {
+    .b-text-title {
+      font-weight: "Roboto Medium";
+      @include rem(font-size, 20);
+    }
+  }
+  .b-content {
+    margin-top: 20px;
+    .b-form-group {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      .b-input {
+        width: 100%;
+        outline: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        border-left: none;
+        border-right: none;
+        border-top: none;
+      }
+      .b-btn {
+        width: 100%;
+        background-color: $color_green;
+        border: none;
+        border-radius: 2px;
+        color: #fff;
+        padding: 6px;
+      }
+    }
+  }
+}
+.b-page-book {
+  position: fixed;
+  width: 400px;
+  left: 50%;
+  top: 50%;
+  @include transform(translate(-50%, -50%));
+}
+.b-book {
+  background-color: #fff;
+  padding: 20px 20px 10px 20px;
+  border-radius: 4px;
+  .b-heading {
+    .b-text-title {
+      font-weight: "Roboto Medium";
+      @include rem(font-size, 20);
+    }
+  }
+  .b-content {
+    margin-top: 20px;
+    .b-form-group {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      .b-input {
+        width: 100%;
+        outline: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        border-left: none;
+        border-right: none;
+        border-top: none;
+      }
+      .b-btn {
+        width: 100%;
+        background-color: $color_green;
+        border: none;
+        border-radius: 2px;
+        color: #fff;
+        padding: 6px;
+      }
+      .b-select{
+       margin-left: 20px;
+       border: none;
+       outline: none;
+       background-color: #f0f0f0;
+       padding: 10px;
+       border-radius: 4px;
+       cursor: pointer;
+       border-radius: 2px;
+      }
+    }
+    .b-form-button {
+      @include flexbox();
+      justify-content: space-between;
+      padding: 0 50px;
+      .b-btn {
+        background-color: $color_green;
+        border: none;
+        border-radius: 2px;
+        color: #fff;
+        padding: 8px;
+        min-width: 100px;
+        &.b-btn-cancel {
+          background-color: #f0f0f0;
+          color: #000;
+        }
       }
     }
   }

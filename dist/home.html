@@ -32,54 +32,84 @@
       <div class="b-block">
         <div class="b-block-left">
           <div class="b-icon">
-            <img src="https://greenglobal.vn/wp-content/themes/gg2019/resources/assets/images/logo-light.svg" alt="Logo" />
+            <img src="../../../images/logo-light.svg" alt="Logo" />
           </div>
         </div>
         <div class="b-block-right">
-          <ul class="b-list-item">
+          <div class="b-list-item">
             <li class="b-item">
-              <button class="b-btn"><i class="fas fa-bell"></i></button>
+              <button class="b-btn"><img src="../../../images/alarm-bell.svg" alt="Bell" /></button>
             </li>
             <li class="b-item">
-              <button class="b-btn"><i class="fas fa-cog"></i></button>
+              <button class="b-btn"><img src="../../../images/Shape.svg" alt="Shape" /></button>
             </li>
             <li class="b-item b-dropdown">
               <button class="b-btn"><i class="fas fa-user"></i> Xin Chào, Hau</button>
             </li>
-          </ul>
+            <li class="b-item ">
+              <button class="b-btn"><i class="fas fa-user"></i> Đăng Nhập</button>
+            </li>
+          </div>
         </div>
       </div>
     </header>
 
 
     <main class="b-page-main">
+      <!-- <div class="b-page-login">
+                <div class="b-login">
+                    <div class="b-heading">
+                        <h2 class="b-text-title">
+                            Đăng Nhập
+                        </h2>
+                    </div>
+                    <div class="b-content">
+                        <form class="b-form">
+                            <div class="b-form-group">
+                                <input type="text" placeholder="Email" class="b-input" />
+                            </div>
+                            <div class="b-form-group">
+                                <input type="text" placeholder="Email" class="b-input" />
+                            </div>
+                            <div class="b-form-group">
+                                <button type="submit" class="b-btn waves-effect waves-teal">Đăng Nhập</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> -->
+      <div class="b-page-book">
+        <div class="b-book">
+          <div class="b-heading">
+            <h2 class="b-text-title">
+              ĐẶT LỊCH PHÒNG HỌP
+            </h2>
+          </div>
+          <div class="b-content">
+            <form class="b-form">
+              <div class="b-form-group">
+                <input type="text" placeholder="Nhập Tiêu Đề" class="b-input" />
+              </div>
+              <div class="b-form-group">
+                <input type="text" placeholder="Email" class="b-input" />
+              </div>
+              <div class="b-form-group">
+                <label for="c">Chọn Phòng</label>
+                <select class="b-select">
+                  <option>Phòng lớn</option>
+                  <option>Phòng lớn</option>
+                  <option>Phòng lớn</option>
+                </select>
+              </div>
+              <div class="b-form-button">
+                <button type="submit" class="b-btn b-btn-cancel waves-effect waves-teal">Đăng Nhập</button>
+                <button type="submit" class="b-btn b-btn-save waves-effect waves-teal">Đăng Nhập</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
       <div class="b-block">
-        <!-- <div class="b-modal">
-                    <form action="" class="b-form">
-                        <div class="b-form-group">
-                            <input type="text" placeholder="Thêm Tiêu Đề" />
-                        </div>
-                        <div class="b-form-group b-date">
-                            <input type="datetime-local" />
-                            <input type="datetime-local" />
-                        </div>
-                        <div class="b-form-group b-form-room">
-                            <lable class="b-lable">Chọn Phòng</lable>
-                            <select>
-                                <option value="default">Chọn Phòng</option>
-                                <option> Phòng 1</option>
-                                <option> Phòng2</option>
-                            </select>
-                        </div>
-                        <div class="b-form-group">
-                            <input type="checkbox"> Lặp Lại
-                        </div>
-                        <div class="b-form-input">
-                            <button type="submit">LƯU</button>
-                            <button type="cancel">HỦY</button>
-                        </div>
-                    </form>
-                </div> -->
         <div class="b-block-left">
           <div class="b-group-btn">
             <button class="b-btn waves-effect waves-light">
@@ -92,25 +122,19 @@
           <div class="b-rooms">
             <div class="b-heading text-center">
               <h2 class="b-text-title">
-                PHÒNG
+                DANH SÁCH PHÒNG
               </h2>
             </div>
             <div class="b-form">
               <form>
                 <div class="b-form-group">
-                  <input type="checkbox" name="a" id="a"> <label for="a"> Phòng họp nhỏ 1
+                  <input type="checkbox" name="a"> <label for="a" class="b-lable-checkbox">
+                    Phòng họp nhỏ 1
                   </label>
                 </div>
                 <div class="b-form-group">
-                  <input type="checkbox" name="a" id="g"> <label for="g"> Phòng họp nhỏ 1
-                  </label>
-                </div>
-                <div class="b-form-group">
-                  <input type="checkbox" name="a" id="c"> <label for="c"> Phòng họp nhỏ 1
-                  </label>
-                </div>
-                <div class="b-form-group">
-                  <input type="checkbox" name="a" id="b"> <label for="b"> Phòng họp nhỏ 1
+                  <input type="checkbox" name="a1"> <label for="a1" class="b-lable-checkbox">
+                    Phòng họp nhỏ 2
                   </label>
                 </div>
               </form>

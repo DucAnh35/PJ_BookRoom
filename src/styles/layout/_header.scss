@@ -34,7 +34,8 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #818181;
+  background-color: $color_header;
+  box-shadow: 0 0 10px -2px rgba($color: #000000, $alpha: 0.2);
   .b-block {
     @include flexbox();
     @include justify-content(space-between);
@@ -55,7 +56,7 @@
             font-family: "Font Awesome 5 Free";
             content: "\f078";
             font-weight: 900;
-            color: #fff;
+            color: $color_icon;
           }
         }
         .b-btn {
@@ -64,17 +65,17 @@
           min-width: 50px;
           background-color: transparent;
           border: none;
-          color: #fff;
+          color: $color_icon;
 
           &:hover {
             background-color: #fff;
             color: #414755;
             i {
-              color: #414755;
+              color: $color_icon;
             }
           }
           i {
-            color: #fff;
+            color: $color_icon;
             @include rem(font-size, 20);
           }
         }
