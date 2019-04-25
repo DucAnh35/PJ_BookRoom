@@ -1,31 +1,31 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <!-- include head.html -->
-  @@include('../layouts/head.html', {
-    "title": "HTML Boilerplate"
-  })
-  <!-- include styles.html -->
-  @@include('../layouts/styles.html')
-</head>
-<body>
-  <div class="wrapper">
-    <!-- include header.html -->
-    @@include('../layouts/header.html')
+    <head>
+        <!-- include head.html -->
+        @@include('../layouts/head.html', { "title": "HTML Boilerplate" })
+        <!-- include styles.html -->
+        @@include('../layouts/styles.html')
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- include header.html -->
+            @@include('../layouts/header.html')
 
-    <!-- include banner.html -->
-    <section class="b-dashboard-content">
-            @@include('../layouts/sider.html')
-            @@include('../partials/form.html')
-        </section>
+            <!-- include banner.html -->
+            <section class="b-dashboard-content">
+                @@include('../layouts/sider.html')
+                <div class="right-form">
+                    @@include('../partials/form.html') 
+                    @@include('../layouts/footer.html')
+                    
+                </div>
+            </section>
 
-    
+            <!-- include footer.html -->
+            
+        </div>
 
-    <!-- include footer.html -->
-    @@include('../layouts/footer.html')
-  </div>
-
-  <!-- include scripts.html -->
-  @@include('../layouts/scripts.html')
-</body>
+        <!-- include scripts.html -->
+        @@include('../layouts/scripts.html')
+    </body>
 </html>
