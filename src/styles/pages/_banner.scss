@@ -9,10 +9,11 @@ body {
 .right-content {
     width: calc(100%-250px);
     padding-top: 20px;
+    width: 100%;
     .card-row {
         padding: 10px 0;
         .page-title {
-
+            
             .title {
                 font-weight: 700;
                 color: $color_title;
@@ -70,7 +71,6 @@ body {
         .feed-widget {
             position: relative;
             width: 100%;
-
             .item-feed {
                 @include flexbox();
                 @include justify-content(space-between);
