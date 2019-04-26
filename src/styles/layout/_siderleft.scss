@@ -1,4 +1,7 @@
 .b-dashboard-content {
+    position: relative;
+    width: 100%;
+    @include flexbox();
     .left-menu {
         min-width: 250px;
         max-width: 250px;

@@ -14,7 +14,11 @@
     @@include('../layouts/header.html')
     <section class="b-dashboard-content">
         @@include('../layouts/sider.html')
-        @@include('../partials/banner.html')
+        <div class="right-content">
+          @@include('../partials/banner.html')
+          @@include('../layouts/footer.html')
+        </div>
+        
     </section>
     
     <!-- include banner.html -->
@@ -24,7 +28,7 @@
     
 
     <!-- include footer.html -->
-    @@include('../layouts/footer.html')
+    
   </div>
 
   <!-- include scripts.html -->

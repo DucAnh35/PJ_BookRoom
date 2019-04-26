@@ -16,13 +16,17 @@
     <!-- include banner.html -->
     <section class="b-dashboard-content">
             @@include('../layouts/sider.html')
-            @@include('../partials/edit.html')
+            <div class="edit-form">
+              @@include('../partials/edit.html')
+              @@include('../layouts/footer.html')
+            </div>
+            
         </section>
 
     
 
     <!-- include footer.html -->
-    @@include('../layouts/footer.html')
+    
   </div>
 
   <!-- include scripts.html -->

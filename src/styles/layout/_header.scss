@@ -52,6 +52,42 @@
         display: inline-block;
 
         &.b-dropdown {
+          position: relative;
+          &.is-active {
+            .b-hash-menu {
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+          .b-hash-menu {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            width: 150px;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 0 10px -2px rgba($color: #000000, $alpha: 0.2);
+            .b-logout {
+              position: relative;
+              .b-btn {
+                display: block;
+                width: 100%;
+                height: 50px;
+                color: #868686;
+                @include rem(font-size, 18);
+                &:hover{
+                  background-color: #3384e2;
+                  color: #fff;
+                  border-radius: 4px;
+                  i{
+                    color: #fff
+                  }
+                }
+              }
+            }
+          }
           &::after {
             font-family: "Font Awesome 5 Free";
             content: "\f078";
