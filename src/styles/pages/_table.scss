@@ -1,75 +1,72 @@
 .right-table {
     width: calc(100%-250px);
     padding-top: 20px;
-   
-    .header-title {
-        @include flexbox();
-        @include justify-content(space-between);
-        .page-title {
-            width: 100%;
-            .title {
-                font-weight: 700;
-                color: $color_title;
-                @include rem("font-size", 18);
-                font-family: 'Nunito Sans', sans-serif;
-            }
-            .b-link {
-                color: #2962FF;
-                @include rem("font-size", 12);
-                font-family: 'Nunito Sans', sans-serif;
-            }
-            .b-arrow {
-                margin: 0 5px;
-                color: #6C757D;
-                @include rem("font-size", 12);
-                font-family: 'Nunito Sans', sans-serif;
-            }
+
+    .page-title {
+
+        .title {
+            font-weight: 700;
+            color: $color_title;
+            @include rem("font-size", 18);
+            font-family: 'Nunito Sans', sans-serif;
         }
-        .btn-upgrade {
-            text-align: right;
-            width: 100%;
-            .link-upgrade {
-                border-radius: 2px;
-                background: #F62D51;
-                padding: 8px 10px;
-                color: #FFFFFF;
-                @include rem("font-size", 14);
-                font-family: 'Nunito Sans', sans-serif;
-            }
+        .b-link {
+            color: #2962FF;
+            @include rem("font-size", 12);
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .b-arrow {
+            margin: 0 5px;
+            color: #6C757D;
+            @include rem("font-size", 12);
+            font-family: 'Nunito Sans', sans-serif;
         }
     }
-    .b-card{
+    .btn-upgrade {
+        text-align: right;
+
+        .link-upgrade {
+            border-radius: 2px;
+            background: #F62D51;
+            padding: 8px 10px;
+            color: #FFFFFF;
+            @include rem("font-size", 14);
+            font-family: 'Nunito Sans', sans-serif;
+        }
+    }
+
+    .b-card {
         background: #FFFFFF;
-        
-        .card-body{
+
+        .card-body {
             position: relative;
             margin-top: 20px;
-            .card-title{
+            .card-title {
                 color: $color_title;
                 @include rem("font-size", 18);
                 font-family: 'Nunito Sans', sans-serif;
             }
-            .title-table{
+            .title-table {
                 padding: 40px 0 0;
                 color: $color_title;
                 @include rem("font-size", 14);
                 font-family: 'Nunito Sans', sans-serif;
             }
-            .card-subtitle{
+            .card-subtitle {
                 color: #A1AAB2;
                 @include rem("font-size", 14);
                 font-family: 'Nunito Sans', sans-serif;
             }
-            .table-responsive{
+            .table-responsive {
                 padding: 10px 0;
-                .table{
-                    th{
+                .table {
+                    th {
                         padding: 16px;
                         color: $color_title;
                         @include rem("font-size", 14);
                         font-family: 'Nunito Sans', sans-serif;
                     }
-                    td{
+                    td {
                         padding: 16px;
                         color: $color_title;
                         @include rem("font-size", 14);
@@ -80,12 +77,5 @@
             }
         }
     }
-    .b-dashboard-footer {
-        padding-top: 40px;
-        padding-bottom: 25px;
-        text-align: center;
-        @include rem("font-size",14);
-        color: $color_title;
-        font-family: 'Nunito Sans', sans-serif;
-    }  
+
 }
