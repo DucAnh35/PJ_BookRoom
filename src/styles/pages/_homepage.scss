@@ -7,17 +7,20 @@
       min-height: 100vh;
       padding: 100px 10px;
       width: 20%;
-      background-color: #d8d8d8;
+      background-color: white;
+      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25);
       .b-group-btn {
         margin-bottom: 10px;
+        padding: 0 15px;
         .b-btn {
           display: block;
-          width: 180px;
+          width: 200px;
           padding: 8px 10px;
           border: none;
           box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.25);
-          background-color: #818181;
+          background-color: #1d85fc;
           color: #fff;
+          font-weight: 600;
         }
       }
       .b-calender {
@@ -34,11 +37,19 @@
             font-weight: 700;
           }
         }
-        .b-form {
-          margin-top: 10px;
-          padding: 10px;
-          input[type="checkbox"] {
-            border-radius: 100%;
+        .b-list{
+          
+          .list-menu{
+            padding-left: 50px;
+            
+            
+              .link{
+                width: 30px;
+                height: 30px;
+                background-color: #000;
+                
+          
+            }
           }
         }
       }
@@ -46,9 +57,10 @@
     .b-block-right {
       width: 80%;
       padding: 90px 20px;
+      
       .b-fullcalender {
         min-height: 100vh;
-        background-color: #d8d8d8;
+        background-color: #f8f2f2;
         box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.45);
         border-radius: 0px;
       }
