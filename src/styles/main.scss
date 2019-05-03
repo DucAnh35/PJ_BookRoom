@@ -1,8 +1,11 @@
 // ----------------------------------------------------------------------
 // Font
 // ----------------------------------------------------------------------
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=vietnamese');
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=vietnamese");
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../fonts/Roboto-Medium.ttf");
+}
 // ----------------------------------------------------------------------
 // Base
 // ----------------------------------------------------------------------
