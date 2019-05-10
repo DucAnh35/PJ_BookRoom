@@ -179,24 +179,29 @@
             
         }
         .b-pagination{
-            text-align: center;
-            
-            .btn-page{
-                margin: -3px;
-                padding: 10px 15px;
-                color: #2962FF;
-                background-color: white; 
-                font-weight: 700;
-                border: 1px solid rgb(212, 209, 209);
-                i{
-                    font-size: 12px;
-                }
-                &:hover{
-                    background-color: #2962FF;
-                    color: #fff; 
+            padding-top: 40px;
+            .b-list-page{
+                @include flexbox();
+                @include justify-content(center);
+                .btn-page{
+                    
+                    margin: -3px;
+                    padding: 10px 15px;
+                    color: #2962FF;
+                    background-color: white; 
+                    font-weight: 700;
+                    border: 1px solid rgb(212, 209, 209);
+                    i{
+                        font-size: 12px;
+                    }
+                    &:hover{
+                        background-color: #2962FF;
+                        color: #fff; 
+                    }
                 }
             }
         }
+      
 
     }
 }
