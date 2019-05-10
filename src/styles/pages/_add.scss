@@ -50,6 +50,7 @@
             padding-top: 5px;
             padding-bottom: 20px;
             .btn-add {
+                
                 color: rgb(44, 179, 233);
                 @include rem("font-size", 15);
                 font-family: 'Nunito Sans', sans-serif;
@@ -64,7 +65,7 @@
             }
         }
         .table-responsive {
-            width: 100%;
+            max-width: 100%;
 
             .table {
 
@@ -174,7 +175,27 @@
                 }
 
             }
-
+            
+            
+        }
+        .b-pagination{
+            text-align: center;
+            
+            .btn-page{
+                margin: -3px;
+                padding: 10px 15px;
+                color: #2962FF;
+                background-color: white; 
+                font-weight: 700;
+                border: 1px solid rgb(212, 209, 209);
+                i{
+                    font-size: 12px;
+                }
+                &:hover{
+                    background-color: #2962FF;
+                    color: #fff; 
+                }
+            }
         }
 
     }
