@@ -141,7 +141,9 @@
             .table-responsive {
                 padding-top: 25px;
                 width: 100%;
-    
+                @include flexbox();
+                @include align-items(center);
+                @include justify-content(center);
                 .table {
     
                     .bg-table {
@@ -153,48 +155,38 @@
                             font-family: 'Nunito Sans', sans-serif;
                         }
                     }
-    
-                    .product-name {
-    
-                        .link-name {
-                            float: left;
-                            color: #FFFFFF;
-                            @include rem("font-size", 14);
-                            font-family: 'Nunito Sans', sans-serif;
-                            width: 40px;
-                            height: 40px;
-                            border-radius: 100%;
-                            padding: 10px;
-                            &.user-1 {
-                                background-color: #2962FF;
-                            }
-                            &.user-2 {
-                                background-color: #FB8C00;
-                            }
-                            &.user-3 {
-                                background-color: #36BEA6;
-                            }
-                            &.user-4 {
-                                background-color: #7460EE;
-                            }
-                        }
-                        .b-text {
-                            display: block;
-                            position: relative;
-                            left: 5%;
-                            padding: 10px;
-                            color: $color_title;
-                            @include rem("font-size", 16);
-                            font-family: 'Nunito Sans', sans-serif;
-                            font-weight: 700;
-                        }
-    
-                    }
+                    
+                    
     
                     td {
                         color: $color_title;
                         @include rem("font-size", 14);
                         font-family: 'Nunito Sans', sans-serif;
+                        .product-name {
+                        
+                            .link-name {
+                                float: left;
+                                color: #FFFFFF;
+                                @include rem("font-size", 14);
+                                font-family: 'Nunito Sans', sans-serif;
+                                min-width: 40px;
+                                max-width: 40px;
+                                border-radius: 100%;
+                                
+                            
+                            }
+                            .b-text {
+                                display: block;
+                                position: relative;
+                                left: 5%;
+                                padding: 10px;
+                                color: $color_title;
+                                @include rem("font-size", 16);
+                                font-family: 'Nunito Sans', sans-serif;
+                                font-weight: 700;
+                            }
+        
+                        }
                         .label {
                             color: #FFFFFF;
                             @include rem("font-size", 10.5);
