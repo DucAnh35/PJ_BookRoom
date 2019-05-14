@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "HTML Boilerplate"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- include header.html -->
+        @@include('../layouts/header.html')
+
+        <!-- include banner.html -->
+        <section class="b-dashboard-content">
+            @@include('../layouts/sider.html')
+            <div class="add-form">
+                <div class="b-admin-calender">
+                    <div class="b-calender">
+                        <div class="b-heading">
+                            <div class="b-block">
+                                <div class="b-block-left">
+                                    <h3 class="b-text-title">
+                                        <i class="fas fa-calendar-week"></i> Calender
+                                    </h3>
+                                </div>
+                                <div class="b-block-right">
+                                    <button class="b-btn">
+                                        <i class="fas fa-plus"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-content-main">
+
+                        </div>
+                    </div>
+
+
+                </div>
+                @@include('../layouts/footer.html')
+            </div>
+
+        </section>
+
+
+
+        <!-- include footer.html -->
+
+    </div>
+
+    <!-- include scripts.html -->
+    @@include('../layouts/scripts.html')
+</body>
+
+</html>

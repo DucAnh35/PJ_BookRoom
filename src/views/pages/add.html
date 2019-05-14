@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- include head.html -->
   @@include('../layouts/head.html', {
-    "title": "HTML Boilerplate"
+  "title": "HTML Boilerplate"
   })
   <!-- include styles.html -->
   @@include('../layouts/styles.html')
 </head>
+
 <body>
   <div class="wrapper">
     <!-- include header.html -->
@@ -15,21 +17,22 @@
 
     <!-- include banner.html -->
     <section class="b-dashboard-content">
-            @@include('../layouts/sider.html')
-            <div class="add-form">
-              @@include('../partials/add.html')
-              @@include('../layouts/footer.html')
-            </div>
-            
-        </section>
+      @@include('../layouts/sider.html')
+      <div class="add-form">
+        @@include('../partials/add.html')
+        @@include('../layouts/footer.html')
+      </div>
 
-    
+    </section>
+
+
 
     <!-- include footer.html -->
-    
+
   </div>
 
   <!-- include scripts.html -->
   @@include('../layouts/scripts.html')
 </body>
+
 </html>

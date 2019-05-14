@@ -58,6 +58,10 @@
                 display: block;
                 width: 100%;
                 color: #6C757D;
+                &.active{
+                    background: #F62D51;
+                    color: #fff;
+                }
                 .hide-menu {
                     padding: 0 5px;
                     @include rem("font-size", 14);
