@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- include head.html -->
+  <title>HTML Boilerplate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+  <!-- favicon -->
+  <link href="images/favicon.ico" type="image/x-icon" rel="icon">
+  <!-- meta social -->
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="">
+  <meta property="og:url" content="" />
+  <!-- Google Font -->
+  <!-- include styles.html -->
+  <link rel="stylesheet" href="style/vendor.min.css">
+  <link rel="stylesheet" href="style/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- include header.html -->
+    <header class="b-dashboard-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="b-header">
+            <div class="b-logo">
+              <a href="home.html">
+                <img src="https://greenglobal.vn/wp-content/themes/gg2019/resources/assets/images/logo-light.svg" alt="logo" class="link-logo">
+              </a></div>
+          </div>
+          <div class="b-menu">
+            <div class="b-search">
+              <a><i class="fas fa-search"></i></a>
+            </div>
+            <div class="b-user">
+              <a><img src="../../images/user.jpg" class="img-user"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- include banner.html -->
+    <section class="b-dashboard-content">
+      <div class="left-menu">
+        <ul class="list-menu">
+          <li>
+            <div class="user-profile">
+              <div class="user-pic">
+                <img class="img-user" src="../../images/user.jpg" alt=""></div>
+              <div class="user-content">
+                <a href="#">
+                  <h5 class="name-title">User Name &nbsp;<i class="fas fa-sort-down"></i>
+                  </h5>
+                  <span class="user-email text-muted">user@gmail.com</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="item-btn">
+            <a class="btn-create" href="edit.html">
+              <i class="fas fa-plus"></i>&nbsp;
+              <span class="hide-menu">Create New</span>
+            </a>
+          </li>
+          <li class="item-menu ">
+            <a class="item-link  waves-effect waves-dark" href="index.html" target="_self">
+              <i class="fas fa-database"></i>
+              <span class="hide-menu">Dashboard</span>
+            </a>
+          </li>
+          <li class="item-menu ">
+            <a class="item-link active waves-effect waves-dark" href="form.html" target="_self">
+              <i class="fas fa-users"></i>
+              <span class="hide-menu">Profile</span>
+            </a>
+          </li>
+          <li class="item-menu">
+            <a class="item-link waves-effect waves-dark" href="table.html">
+              <i class="fas fa-table"></i>
+              <span class="hide-menu">Table</span>
+            </a>
+          </li>
+          <li class="text-center">
+            <a href="add.html" class="link-upgrade">Upgrade to pro</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="add-form">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="page-title">
+                <h3 class="title">Dashboard</h3>
+                <a href="#" class="b-link">Home</a>
+                <span class="b-arrow">
+                  <i class="fas fa-chevron-right"></i>
+                  &nbsp;Library</span>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="btn-upgrade">
+                <a href="#" class="link-upgrade">Upgrade to pro</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="header-card">
+              <div>
+                <h4 class="card-title">Top Selling Products</h4>
+              </div>
+            </div>
+            <div class="add-product">
+              <button class="btn-add">ADD</button>
+            </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr class="bg-table">
+                    <th scope="col">ID</th>
+                    <th scope="col">Content</th>
+                    <th scope="col">Id_Room</th>
+                    <th scope="col">NameUser</th>
+                    <th scope="col">DayStart</th>
+                    <th scope="col">TimeStart</th>
+                    <th scope="col">TimeEnd</th>
+                    <th scope="col">Repeat</th>
+                    <th scope="col">Created_at</th>
+                    <th scope="col">Update_at</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">
+                      5
+                    </td>
+                    <td>Meeting</td>
+                    <td>2</td>
+                    <td>
+                      ducanh
+                    </td>
+                    <td>46</td>
+                    <td>356</td>
+                    <td>
+                      <h5 class="price">$2850.06</h5>
+                    </td>
+                    <td>15/5/2019</td>
+                    <td>15/5/2019</td>
+                    <td>15/5/2019</td>
+                    <td>
+                      <button class="btn_edit">Edit</button>
+                      <button class="btn_dele">Delete</button>
+                    </td>
+
+                  </tr>
+
+                </tbody>
+              </table>
+
+            </div>
+            <div class="b-pagination">
+              <ul class="b-list-page">
+                <li class="page-number">
+                  <button class="btn-page">
+                    <i class="fas fa-angle-double-left"></i>
+                  </button>
+                </li>
+                <li class="page-number">
+                  <button class="btn-page">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                </li>
+
+                <li class="page-number">
+                  <button class="btn-page">1</button>
+                </li>
+                <li class="page-number">
+                  <button class="btn-page">2</button>
+                </li>
+                <li class="page-number">
+                  <button class="btn-page">3</button>
+                </li>
+                <li class="page-number">
+                  <button class="btn-page">4</button>
+                </li>
+                <li class="page-number">
+                  <button class="btn-page">5</button>
+                </li>
+                <li class="page-number">
+                  <button class="btn-page">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </li>
+                <li class="page-number">
+                  <button class="btn-page">
+                    <i class="fas fa-angle-double-right"></i>
+                  </button>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <footer class="b-dashboard-footer">
+          <h3 class="text-muted text-center">
+            All Rights Reserved by Xtreme Admin. Designed and Developed by WrapPixel.
+          </h3>
+        </footer>
+      </div>
+
+    </section>
+
+
+
+    <!-- include footer.html -->
+
+  </div>
+
+  <!-- include scripts.html -->
+  <script src="script/vendor.min.js"></script>
+  <script src="script/script.min.js"></script>
+</body>
+
+</html>
